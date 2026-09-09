@@ -1,0 +1,8 @@
+# Butterfly 主题自定义配置
+# 此文件会自动覆盖主题默认配置，无需改动 node_modules 里的主题文件
+
+# 首页顶部全屏大图（banner）——本地蓝紫渐变图，无文字
+index_img: /img/banner.svg
+
+# 其他页面（文章页、标签页等）未单独设置大图时使用的默认图
+default_top_img: /img/banner.svg
