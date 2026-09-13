@@ -6,3 +6,26 @@ index_img: /img/banner.svg
 
 # 其他页面（文章页、标签页等）未单独设置大图时使用的默认图
 default_top_img: /img/banner.svg
+
+# 顶部导航菜单
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  简历: /resume/ || fas fa-user
+
+# 侧边栏个人卡片：把 Follow Me 链接改成真实 GitHub
+aside:
+  card_author:
+    enable: true
+    description: 专注内核与GPU驱动开发，记录学习与实践
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/KernelDriver-star
+
+# 注入简历页专用样式（仅对 .resume-page 容器生效，不影响其他页面）
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/resume.css">

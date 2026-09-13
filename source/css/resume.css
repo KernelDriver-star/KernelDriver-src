@@ -1,0 +1,167 @@
+/* 个人简历页样式 —— 仅作用于 .resume-page 容器，不影响站点其他页面 */
+
+.resume-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 10px 6px 30px;
+  color: var(--font-color);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* 头部 */
+.resume-header {
+  text-align: center;
+  padding: 10px 0 22px;
+  border-bottom: 2px solid var(--theme-color, #425aef);
+  margin-bottom: 10px;
+}
+
+.resume-name {
+  margin: 0 0 6px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.resume-title {
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: var(--theme-color, #425aef);
+  font-weight: 600;
+}
+
+.resume-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.resume-contact i {
+  margin-right: 6px;
+  color: var(--theme-color, #425aef);
+}
+
+.resume-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-contact a:hover {
+  color: var(--theme-color, #425aef);
+}
+
+/* 各章节 */
+.resume-section {
+  margin-top: 26px;
+}
+
+.resume-section-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--theme-color, #425aef);
+  line-height: 1.3;
+}
+
+.resume-section-title i {
+  margin-right: 8px;
+  color: var(--theme-color, #425aef);
+}
+
+.resume-section p {
+  margin: 0;
+}
+
+/* 技能标签式列表 */
+.resume-skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.resume-skills li {
+  position: relative;
+  padding-left: 16px;
+}
+
+/* 用纯 CSS 画三角形项目符号，不依赖图标字体 */
+.resume-skills li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.75em;
+  width: 0;
+  height: 0;
+  border-left: 6px solid var(--theme-color, #425aef);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+/* 经历条目 */
+.resume-item {
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  background: var(--text-bg-hover, rgba(127, 127, 127, 0.1));
+  border-radius: 10px;
+  transition: box-shadow 0.25s;
+}
+
+.resume-item:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.resume-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 6px;
+}
+
+.resume-item-name {
+  font-weight: 700;
+  font-size: 15.5px;
+}
+
+.resume-item-time {
+  font-size: 13.5px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.resume-item-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.resume-item-list li {
+  margin: 3px 0;
+}
+
+/* 打印 / 小屏优化 */
+@media (max-width: 600px) {
+  .resume-name { font-size: 26px; }
+  .resume-item-head { flex-direction: column; gap: 0; }
+  .resume-contact { flex-direction: column; gap: 4px; }
+}
+
+@media print {
+  .resume-page { max-width: 100%; }
+  .resume-item { box-shadow: none; break-inside: avoid; }
+}
