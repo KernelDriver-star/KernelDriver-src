@@ -1,5 +1,5 @@
 ---
-title: CUDA-GDB 使用指南：GPU kernel Function 调试从入门到实践
+title: CUDA-GDB 使用指南：GPU Kernel Function 调试从入门到实践
 date: 2026-09-16 10:00:00
 categories:
   - CUDA
