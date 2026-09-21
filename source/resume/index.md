@@ -40,6 +40,9 @@ comments: false
 </div>
 <ul class="resume-item-list">
 <li>负责 GPU 内核模式驱动（KMD）的技术调研、方案设计与开发实现，完成 GPGPU KMD 驱动程序开发及单元测试</li>
+<li>负责 KMD RAS（可靠性、可用性、可维护性）子系统的设计与开发，实现硬件错误检测、故障上报与异常恢复机制</li>
+<li>主导构建 KMD 自动化测试框架，覆盖驱动核心模块的单元测试与集成测试，实现回归测试自动化，显著提升测试效率与代码质量</li>
+<li>设计并开发 issue-driven-workflow 的 Agent 自动化流程，基于 GitHub Actions 与 AI Coding Agent 打通从 Issue 分析、方案生成、代码实现到 PR 提交与自动审查的端到端自动化链路</li>
 <li>协同硬件设计与固件团队完成芯片 bring-up，并与用户态驱动（UMD）对接，打通完整 GPU 软件栈</li>
 </ul>
 </div>
